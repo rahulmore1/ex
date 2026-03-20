@@ -28,3 +28,7 @@ This is a **Next.js 16 App Router** project with TypeScript and Tailwind CSS v4.
 **Styling:** Tailwind CSS v4 via PostCSS. Dark mode is handled with CSS media queries and CSS custom properties in `globals.css`.
 
 This is a fresh boilerplate — no API routes, database, or auth are set up yet.
+
+## Important: Documentation First
+
+**Before generating any code**, always refer to the relevant documents in the `/docs` directory. These documents contain project-specific requirements, design decisions, and conventions that must be followed. Check `/docs` for any documentation related to the feature or area you are working on before writing or modifying code.

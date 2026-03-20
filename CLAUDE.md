@@ -32,3 +32,5 @@ This is a fresh boilerplate — no API routes, database, or auth are set up yet.
 ## Important: Documentation First
 
 **Before generating any code**, always refer to the relevant documents in the `/docs` directory. These documents contain project-specific requirements, design decisions, and conventions that must be followed. Check `/docs` for any documentation related to the feature or area you are working on before writing or modifying code.
+
+- /docs/ui.md

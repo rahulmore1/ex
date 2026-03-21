@@ -29,7 +29,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
+      <body className="flex min-h-full flex-col bg-background font-sans text-foreground" suppressHydrationWarning>
         <ClerkProvider>
           <header className="border-b border-black/10 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/80">
             <div className="mx-auto flex w-full max-w-5xl items-center justify-end gap-3 px-6 py-4">

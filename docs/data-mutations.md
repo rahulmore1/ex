@@ -8,6 +8,7 @@
 4. **Typed params, no FormData** — Server Action parameters must be explicitly typed TypeScript types or interfaces. `FormData` must never be used as a parameter type.
 5. **Zod validation** — Every Server Action must validate its arguments with Zod before touching the database.
 6. **User data isolation** — Every mutation that touches user-owned data **must** verify `userId`. A user must only be able to mutate their own data. This is a security requirement.
+7. **No redirects in Server Actions** — Never call `redirect()` inside a Server Action. Redirects must be handled client-side after the Server Action resolves (e.g. using `useRouter().push()`).
 
 ---
 
@@ -183,6 +184,7 @@ export function NewWorkoutForm() {
 | Mutating without a `userId` filter on user-owned tables | Security violation — would allow cross-user data modification |
 | Server Actions in files other than `actions.ts` | Actions must be colocated in a file named `actions.ts` |
 | Route Handlers (`app/api/*/route.ts`) for mutations | Use Server Actions instead |
+| `redirect()` inside a Server Action | Redirects must be done client-side after the action resolves |
 
 ---
 

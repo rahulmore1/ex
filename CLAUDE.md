@@ -35,3 +35,7 @@ This is a fresh boilerplate — no API routes, database, or auth are set up yet.
 
 - /docs/ui.md
 - /docs/data-fetching.md
+- /docs/data-mutations.md
+- /docs/auth.md
+- /docs/server-components.md
+- /docs/routing.md
